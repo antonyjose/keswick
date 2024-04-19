@@ -22,6 +22,20 @@ spec:
                         },
                         "port_groups": [
                             {
+                                "name": "Management Network",
+                                "vlan_id": 0,
+                                "policy": {
+                                    "nic_teaming": {
+                                        "policy": "LOADBALANCE_SRCID",
+                                        "notify_switches": true,
+                                        "rolling_order": false,
+                                        "link_criteria_beacon": "IGNORE",
+                                        "active_nics": ["vmnic0"],
+                                        "standby_nics": []
+                                    }
+                                }
+                            },
+                            {
                                 "name": "TestNetwork",
                                 "vlan_id": 124
                             }
