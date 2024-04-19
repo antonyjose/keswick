@@ -39,7 +39,7 @@ spec:
                                 "name": "VM Network",
                                 "vlan_id": 0
                             },
-                             {
+                            {
                                 "name": "NewPG123",
                                 "vlan_id": 123
                             }
